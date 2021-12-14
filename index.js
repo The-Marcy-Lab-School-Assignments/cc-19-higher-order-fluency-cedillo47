@@ -25,10 +25,23 @@ const ninetiesBabies = array => {
     return array.filter(person => person.age > 21);
 }
 
+const addSchool = alumniArray => {
+    return alumniArray.map(alumn =>{
+       return {...alumn, school : `The Marcy Lab School`}
+    })
+}
+
+// console.log(addSchool(alumni))
+
+const addSchool2 = alumniArray => {
+    return alumniArray.map(alumn =>{
+        alumn.school = `The Marcy Lab School`
+       return alumn
+    })
+}
+
+console.log(addSchool2(alumni))
 
 
 
-
-
-
-console.log(averageAge(alumni))
+// console.log(averageAge(alumni))
